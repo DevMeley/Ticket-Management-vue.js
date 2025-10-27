@@ -1,0 +1,52 @@
+<template>
+  <section class="relative overflow-visible bg-white">
+    <div class="container-centered py-16 lg:py-28 flex flex-col lg:flex-row items-center gap-8">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl lg:text-5xl font-extrabold">
+          TicketFlow, Manage tickets simply
+        </h1>
+        <p class="mt-4 text-lg text-slate-600">
+          TicketFlow helps you create, track, and resolve tickets easily
+          whether you’re managing tasks, customers, or project issues.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <router-link
+            to="/auth/signup"
+            class="px-4 py-2 bg-amber-400 text-white rounded-lg border border-slate-200 font-semibold"
+          >  
+            Get Started
+          </router-link>
+        </div>
+      </div>
+    
+      <div class="relative w-full lg:w-1/2 h-56 lg:h-72">
+        <div
+          class="absolute -top-8 -right-8 w-36 h-36 rounded-full bg-gradient-to-tr from-orange-200/20 to-transparent shadow-lg"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="absolute top-12 left-12 w-24 h-24 rounded-full bg-gradient-to-br from-yellow-200/30 to-transparent"
+          aria-hidden="true"
+        ></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+         <img src="../assets/heroimage.png" alt="Hero image" />
+        </div>
+      </div>
+    </div>
+
+    <svg
+      class="hero-wave"
+      viewBox="0 0 1440 120"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M0,20 C360,120 1080,0 1440,80 L1440,120 L0,120 Z"
+        fill="#0066FF"
+        opacity="0.06"
+      />
+    </svg>
+  </section>
+</template>
+
+
