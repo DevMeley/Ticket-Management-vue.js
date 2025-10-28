@@ -1,8 +1,8 @@
 
 <script setup>
 import Header from "./Header.vue";
-import Sidebar from "./Sidebar.vue";
 import { ref } from "vue";
+import SideBar from "./SideBar1.vue";
 
 const isSideBar = ref(false);
 const darkMode = ref(false);
@@ -39,7 +39,7 @@ function openSideMenu() {
       :isSideBar="isSideBar"
     />
     <div class="layout-content">
-      <Sidebar
+      <SideBar
         :isSideBar="isSideBar"
         :openSideMenu="openSideMenu"
       />
